@@ -13,9 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: git clone my project
-      - uses: actions/checkout@v2
-      
       - name: Project list
         run: ls -la
         
