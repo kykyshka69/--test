@@ -19,5 +19,17 @@ jobs:
       - name: Project list
         run: ls -la
         
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+         node-version: 10.x
+      - name: npm install and start
+        run: |
+         npm install
+         npm start
+         
       - name: Run a test script
         run: echo Hello, world!
+
+
+    
